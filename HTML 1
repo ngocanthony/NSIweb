@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>JS Bin</title>
+</head>
+<body>
+<form action="" method="get" class="form-example">
+  <div class="form-example">
+    <label for="name">Votre nom est: </label>
+    <input type="text" name="name" id="name" required>
+  </div>
+</form>
+</legend>
+
+    <div>
+      <input type="checkbox" id="scales" name="scales"
+             >
+      <label for="Choix 1">Choix 1</label>
+    </div>
+
+    <div>
+      <input type="checkbox" id="horns" name="horns">
+      <label for="Choix 2">Choix 2</label>
+    </div>
+</fieldset>
+<label for="name-select">Prénom:</label>
+
+<select id="name-select">
+    <option value="">--Choisir un prénom--</option>
+    <option>Pont</option>
+   <option>Pierre</option>
+</select>
+</body>
+</html>

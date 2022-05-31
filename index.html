@@ -8,14 +8,14 @@
 <body>
 <P>Sexe : <INPUT type="radio" name="sex" value="H" checked> Homme <INPUT type="radio" name="sex" value="F"> Femme
   <div>
-  <input type="checkbox" id="surface" name="scales">
+  <input type="checkbox" id="scales" name="scales">
       <label for="Choix 1">Pomme</label>
     </div>
     <div>
-      <input type="checkbox" id="surface" name="horns">
+      <input type="checkbox" id="horns" name="horns">
       <label for="Choix 2">Poire</label>
     </div>
-        <input type="checkbox" id="surface" name="scales">
+        <input type="checkbox" id="scales" name="scales">
       <label for="Choix 1">Fraise</label>
     </div>
 
@@ -23,19 +23,12 @@
   <form action="" method="get" class="form-example">
   <div class="form-example">
     <label for="name">Votre nom est: </label>
-    <input type="text" name="name" id="surface" required>
-    <input type="submit" onClick="surface();" />
+    <input type="text" name="name" id="name" required>
   </div>
-<script type="text/javascript" src="javascript.js">
-      function surface()
-        {
-            var surface = document.getElementById("surface").value;
-            alert(surface);
-        }
-</script>
+
 <label for="name-select">Prénom:</label>
 
-<select id="surface">
+<select id="name-select">
     <option value="">--Choisir un prénom--</option>
     <option>Pont</option>
    <option>Pierre</option>

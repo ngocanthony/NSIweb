@@ -6,7 +6,7 @@
   <title>JS Bin</title>
 </head>
 <body>
-<P>Sexe : <INPUT type="radio" name="sex" value="H" checked> Homme <INPUT type="radio" name="sex" value="F"> Femme
+<P>Sexe : <INPUT type="radio" name="sex" value="H" id="h"> Homme <INPUT type="radio" name="sex" value="F" id="f"> Femme
   <div>
   <input type="checkbox" id="scales" name="scales">
       <label for="Choix 1">Pomme</label>
@@ -27,11 +27,28 @@
   </div>
 
 <label for="name-select">Prénom:</label>
+<script type="text/javascript">
+ function getValues(){
+        var div = document.createElement("div");
+        div.setAttribute("id", "res");
 
+        if(document.querySelector('#f').checked){
+            var sexe = document.querySelector('#f').value
+            console.log(sex);
+        }else if(document.querySelector('#h').checked){
+            var sexe = document.querySelector('#h').value;
+            console.log(sex);
+        }
+        
+    }
+</script>
 <select id="name-select">
     <option value="">--Choisir un prénom--</option>
     <option>Pont</option>
    <option>Pierre</option>
+  <button onclick="getValues()">afficher valeurs</button>
 </select>
 </body>
+  <br>
+<button onclick="getValues()">afficher valeurs</button>
 </html>

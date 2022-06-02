@@ -6,49 +6,65 @@
   <title>JS Bin</title>
 </head>
 <body>
-<P>Sexe : <INPUT type="radio" name="sex" value="H" id="h"> Homme <INPUT type="radio" name="sex" value="F" id="f"> Femme
+Sexe : <INPUT type="radio" name="sex" value="Homme" id="h"> Homme 
+<INPUT type="radio" name="sex" value="Femme" id="f"> Femme
   <div>
-  <input type="checkbox" id="scales" name="scales">
+  <input type="checkbox" id="fruit" name="fruit">
       <label for="Choix 1">Pomme</label>
     </div>
     <div>
-      <input type="checkbox" id="horns" name="horns">
+      <input type="checkbox" id="Poire" name="Poire">
       <label for="Choix 2">Poire</label>
     </div>
-        <input type="checkbox" id="scales" name="scales">
+        <input type="checkbox" id="Fraise" name="Fraise">
       <label for="Choix 1">Fraise</label>
-    </div>
 
-</fieldset>
   <form action="" method="get" class="form-example">
   <div class="form-example">
     <label for="name">Votre nom est: </label>
     <input type="text" name="name" id="name" required>
   </div>
-
+  </form>
 <label for="name-select">Prénom:</label>
 <script type="text/javascript">
  function getValues(){
-        var div = document.createElement("div");
-        div.setAttribute("id", "res");
-
+ 
         if(document.querySelector('#f').checked){
             var sexe = document.querySelector('#f').value
-            console.log(sex);
-        }else if(document.querySelector('#h').checked){
-            var sexe = document.querySelector('#h').value;
-            console.log(sex);
+            document.getElementById("sex").innerHTML = "Femme";
+            console.log(sexe);
         }
+   if(document.querySelector('#h').checked){
+            var sexe = document.querySelector('#h').value;
+            document.getElementById("sex").innerHTML = "Homme";
+            console.log(sexe);
+
+        }
+        {
+  var name = document.getElementById('name').value;
+  document.getElementById('nom').innerHTML = name;
+   console.log(name);
+}
+{
+        selectElement = document.querySelector('#names');
+        output = selectElement.value;
+        document.querySelector('.output').textContent = output;
+    }
         
     }
 </script>
-<select id="name-select">
+<select id="names" name="namelist">
     <option value="">--Choisir un prénom--</option>
-    <option>Pont</option>
+    <option>Paul</option>
    <option>Pierre</option>
-  <button onclick="getValues()">afficher valeurs</button>
 </select>
+<div id="res">
+<button onclick="getValues()">
+   Activate
+</button>
+</div>
+<div id="sex"></div>
+<div id="nom"></div>
+<div> <span class="output"></span> </div>
 </body>
-  <br>
-<button onclick="getValues()">afficher valeurs</button>
 </html>

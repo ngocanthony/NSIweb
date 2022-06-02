@@ -9,7 +9,7 @@
 Sexe : <INPUT type="radio" name="sex" value="Homme" id="h"> Homme 
 <INPUT type="radio" name="sex" value="Femme" id="f"> Femme
   <div>
-  <input type="checkbox" id="fruit" name="fruit">
+  <input type="checkbox" id="Pomme" name="Pomme">
       <label for="Choix 1">Pomme</label>
     </div>
     <div>
@@ -50,6 +50,23 @@ Sexe : <INPUT type="radio" name="sex" value="Homme" id="h"> Homme
         output = selectElement.value;
         document.querySelector('.output').textContent = output;
     }
+    
+ 
+        if(document.querySelector('#Pomme').checked){
+            var sexe = document.querySelector('#Pomme').value
+            document.getElementById("fruit").innerHTML = "Pomme";
+            console.log(sexe);
+        }
+        if(document.querySelector('#Fraise').checked){
+            var fruit = document.querySelector('#Fraise').value
+            document.getElementById("fruit").innerHTML = "Fraise";
+            console.log(fruit);
+            }
+        if(document.querySelector('#Poire').checked){
+            var fruit = document.querySelector('#Poire').value
+            document.getElementById("fruit").innerHTML = "Poire";
+            console.log(fruit);
+            }
         
     }
 </script>
@@ -65,6 +82,7 @@ Sexe : <INPUT type="radio" name="sex" value="Homme" id="h"> Homme
 </div>
 <div id="sex"></div>
 <div id="nom"></div>
+<div id="fruit"></div>
 <div> <span class="output"></span> </div>
 </body>
 </html>

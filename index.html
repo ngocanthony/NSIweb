@@ -54,17 +54,17 @@ Sexe : <INPUT type="radio" name="sex" value="Homme" id="h"> Homme
  
         if(document.querySelector('#Pomme').checked){
             var sexe = document.querySelector('#Pomme').value
-            document.getElementById("fruit").innerHTML = "Pomme";
+            document.getElementById("fruit1").innerHTML = "Pomme";
             console.log(sexe);
         }
         if(document.querySelector('#Fraise').checked){
             var fruit = document.querySelector('#Fraise').value
-            document.getElementById("fruit").innerHTML = "Fraise";
+            document.getElementById("fruit3").innerHTML = "Fraise";
             console.log(fruit);
             }
         if(document.querySelector('#Poire').checked){
             var fruit = document.querySelector('#Poire').value
-            document.getElementById("fruit").innerHTML = "Poire";
+            document.getElementById("fruit2").innerHTML = "Poire";
             console.log(fruit);
             }
         
@@ -82,7 +82,9 @@ Sexe : <INPUT type="radio" name="sex" value="Homme" id="h"> Homme
 </div>
 <div id="sex"></div>
 <div id="nom"></div>
-<div id="fruit"></div>
+<div id="fruit1"></div>
+<div id="fruit2"></div>
+<div id="fruit3"></div>
 <div> <span class="output"></span> </div>
 </body>
 </html>
